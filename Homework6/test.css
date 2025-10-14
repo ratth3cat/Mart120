@@ -1,0 +1,41 @@
+
+
+ .page2 {
+    font-size: larger;
+    text-align: justify;
+    background-image: url(gradient.jpg);
+
+ }
+
+  .webpage {
+      background-color: rgb(181, 181, 181);
+      font-size: larger;
+
+}
+h1{
+  color:rgb(0, 0, 54);
+  text-decoration: underline;
+  text-align: center;
+  color: rgb(154, 157, 200);
+background-color: rgb(1, 24, 48);
+}
+
+
+p{
+ color:rgb(54, 0, 48);
+  
+  font-family:Helvetica
+
+}
+
+
+li{
+    
+color:rgb(0, 0, 54);
+
+  font-family:Helvetica
+
+}
+
+
+style="background-image: url(gradient.jpg); 
