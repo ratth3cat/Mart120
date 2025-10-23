@@ -8,41 +8,24 @@
     <body>
 <h1>Questions and Queries</h1>
     <script>
+{
 
-if (name.value == "") {
-mytext.classList.add("red")
-mytext.classList.remove("green")
+var firstName = document.getElementById("fname").value;
+var lastName = document.getElementById("lName").value;
+var ToAcheck = document.getElementById("ToACheck").value;
+var ToAmessage = document.getElementById("ToAmessage")
+
+if(firstName) == ""
+{document.getElementById("fName").style.backgroundcolor= "red";
+
 }
-else {
-mytext.classList.add("green")
-mytext.classList.remove("red")
-}
-
-    </script>
 
 
-
-   <form action="/submit-form" style="background-color: beig;";">
-  <label class="Name">Name:</label>
-  <input type="text" id="name" name="name" required>
-
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-
-  <label for="message">Additional Info:</label>
-  <textarea id="message" name="message" required></textarea>
-
-  <button type="submit">Submit</button>
-
-   <input type="checkbox" id="terms" name="terms" required>
-  <label for="terms">I agree to the terms and conditions</label><br><br>
-  <button type="submit">Submit</button>
-   
-</form>
-
+</script>
 <a href="https://www.instagram.com/ratth3cat/"><img src="instagram.svg"  style="width:20px;height:20px;"></a>
 
 <a href=page2.html>Story :]</a>
 <a href=webpage.html>About</a>
+
 </body>
 </html>

@@ -1,48 +1,88 @@
+<!DOCTYPE html>
 <html>
 <head>
-     <link href="test.css"  type="text/css" rel="stylesheet"/>
-    <title> Yes </title>
-   
+  <title>Contact Page</title>
+  <style>
+    
+
+    input {
+      margin-bottom: 10px;
+    }
+
+  
+    .error {
+      border: 2px solid red;
+      background-color: #aaaaaa;
+    }
+  </style>
 </head>
-<body style="background-color: gray;">
-    <body>
+
+    <body >
 <h1>Questions and Queries</h1>
-    <script>
 
-if (name.value == "") {
-mytext.classList.add("red")
-mytext.classList.remove("green")
-}
-else {
-mytext.classList.add("green")
-mytext.classList.remove("red")
-}
-
-    </script>
-
-
-
-   <form action="/submit-form" style="background-color: beig;";">
-  <label class="Name">Name:</label>
+<form  style="background-color: beige;">
+  <label> Name:</label>
   <input type="text" id="name" name="name" required>
 
   <label for="email">Email:</label>
   <input type="email" id="email" name="email" required>
 
-  <label for="message">Additional Info:</label>
-  <textarea id="message" name="message" required></textarea>
-
-  <button type="submit">Submit</button>
+  
 
    <input type="checkbox" id="terms" name="terms" required>
   <label for="terms">I agree to the terms and conditions</label><br><br>
-  <button type="submit">Submit</button>
+  
+<button type="submit">Submit</button>
+ 
    
 </form>
+
+    <script>
+document.getElementById("Form").addEventListener("submit", function(event)) {
+
+    var Name = document.getElementById("name");
+    var email = document.getElementById("email");
+    var terms = document.getElementById("terms");
+
+     Name.classList.remove("error");
+    email.classList.remove("error");
+    terms.classList.remove("error");
+
+    if (Name.value.trim() === "") {
+      event.preventDefault(); 
+      Name.classList.add("error"); 
+      Name.focus(); 
+      return;
+    }
+
+      if (email.value.trim() === "") {
+      event.preventDefault();
+      email.classList.add("error");
+      email.focus();
+      return;
+      }
+
+      if (!terms.checked) {
+      event.preventDefault();
+      terms.classList.add("error");
+      terms.focus();
+      return;
+    }
+
+    alert("Data Stolen!");
+}
+    </script>
+  
+
+
+   
 
 <a href="https://www.instagram.com/ratth3cat/"><img src="instagram.svg"  style="width:20px;height:20px;"></a>
 
 <a href=page2.html>Story :]</a>
 <a href=webpage.html>About</a>
+
+
+
 </body>
 </html>
